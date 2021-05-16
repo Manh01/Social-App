@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.socialapp">
+    <!-- Internet permisson -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="Oanh"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".PostDetailActivity"></activity>
+        <activity android:name=".ThereProfileActivity" />
+        <activity android:name=".AddPostActivity" />
+        <activity
+            android:name=".ChatActivity"
+            android:theme="@style/AppThemeNo" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".DashboardActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <provider
+            android:authorities="com.example.socialapp.fileprovider"
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/paths"/>
+        </provider>
+    </application>
+
+</manifest>

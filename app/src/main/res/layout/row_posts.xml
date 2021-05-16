@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/profileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                android:id="@+id/ivPictureU"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ic_default_img_white" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvNameU"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvTimeP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btnMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                app:srcCompat="@drawable/ic_more_dark" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTitleP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:text="Title"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDescriptionP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:text="Description" />
+
+        <ImageView
+            android:id="@+id/ivImageP"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvLikesP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="999"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/tvCommentsP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="999"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F5F0F0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableStart="@drawable/ic_like_dark"
+                android:drawableLeft="@drawable/ic_like_dark"
+                android:drawablePadding="5dp"
+                android:text="Like" />
+
+            <Button
+                android:id="@+id/btnComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableStart="@drawable/ic_comment_dark"
+                android:drawableLeft="@drawable/ic_comment_dark"
+                android:drawablePadding="5dp"
+                android:text="Comment" />
+
+            <Button
+                android:id="@+id/btnShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableStart="@drawable/ic_share_dark"
+                android:drawableLeft="@drawable/ic_share_dark"
+                android:drawablePadding="5dp"
+                android:text="Share" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

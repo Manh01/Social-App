@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_Logout"
+        android:title="Đăng xuất" />
+    <item
+        android:id="@+id/action_Search"
+        android:icon="@drawable/ic_search_white"
+        android:title="Tìm kiếm"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_Add_Post"
+        android:icon="@drawable/ic_add_white"
+        android:title="Thêm bài đăng"
+        app:showAsAction="always" />
+</menu>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="2dp"
+    app:contentPadding="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/ivAvatar"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            app:srcCompat="@drawable/ic_default_img_white">
+
+        </com.blogspot.atifsoftwares.circularimageview.CircularImageView>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivAvatar"
+            android:text="TextView"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvName"
+            android:layout_toEndOf="@id/ivAvatar"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvComment"
+            android:layout_toEndOf="@id/ivAvatar"
+            android:text="TextView" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
